@@ -1,0 +1,53 @@
+.about
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  svg
+    margin: 0 0 40px 0
+  h3
+    font-size: 1.2em
+    margin: 0 0 20px 0
+  p
+    font-size: 0.7em
+    font-weight: 300
+    padding: 0 60px
+    text-align: center
+    margin: 0 0 40px 0
+  textarea
+    resize: none
+    width: 200px
+    height: 100px
+    outline: none
+    border: 1px solid $colorPlaceholder
+    border-radius: 5px
+    padding: 10px 10px
+    font-family: "Roboto", sans-serif
+    margin: 0 0 40px 0
+    font-size: 0.6em
+    &::placeholder
+      color: $colorPlaceholder
+      font-weight: 400
+      font-size: 0.7em
+      font-family: "Roboto", sans-serif
+
+.done
+  width: 80px
+  height: 35px
+  background: $colorButton
+  color: #ffffff
+  outline: none
+  border: none
+  border-radius: 5px
+  margin: 0 auto 20px auto
+  cursor: pointer
+  &:hover
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(67,89,147,1)
+    -moz-box-shadow: 0px 0px 10px 0px rgba(67,89,147,1)
+    box-shadow: 0px 0px 10px 0px rgba(67,89,147,1)
+  &:active
+    -webkit-box-shadow: inset 0px 0px 10px 0px rgba(67,89,147,1)
+    -moz-box-shadow: inset 0px 0px 10px 0px rgba(67,89,147,1)
+    box-shadow: inset 0px 0px 10px 0px rgba(67,89,147,1)
+    color: #c8c8c8
+

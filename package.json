@@ -1,0 +1,24 @@
+{
+  "name": "vm_test",
+  "version": "1.0.0",
+  "main": "src/js/script.js",
+  "scripts": {
+    "sass": "sass --watch ./src/sass/main.sass ./public/style.css",
+    "build": "webpack",
+    "start:dev": "webpack-dev-server",
+    "livereload": "livereload ./public"
+  },
+  "author": "Vlasenko Dmitry <psyspeedi@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "livereload": "^0.8.2",
+    "node-sass": "^4.13.0",
+    "sass": "^1.24.4",
+    "sass-loader": "^8.0.1",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}

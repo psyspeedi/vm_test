@@ -1,0 +1,81 @@
+.menu
+  display: block
+  ul
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    padding: 0
+    width: 100vw
+    height: 100vh
+    z-index: 12
+    position: fixed
+    background: #fff
+    left: -100vw
+    transition: .6s ease-in-out
+
+  li
+    list-style: none
+    margin: 20px 0
+    cursor: pointer
+
+
+.menuHidden
+  left: 0 !important
+.burger-wrap
+  position: fixed
+  top: 0
+  left: 0
+  background: transparent
+  display: flex
+  justify-content: flex-end
+  width: 100vw
+  z-index: 15
+.burger-menu
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 40px
+  height: 40px
+  margin: 0 10px 0 0
+.ham
+  cursor: pointer
+  -webkit-tap-highlight-color: transparent
+  transition: transform 600ms
+  -moz-user-select: none
+  -webkit-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+.hamRotate.active
+  transform: rotate(45deg)
+
+.hamRotate180.active
+  transform: rotate(180deg)
+
+.line
+  fill: none
+  transition: stroke-dasharray 600ms, stroke-dashoffset 600ms
+  stroke: #000
+  stroke-width: 5.5
+  stroke-linecap: round
+
+.ham3 .top
+  stroke-dasharray: 40 130
+
+.ham3 .middle
+  stroke-dasharray: 40 140
+
+.ham3 .bottom
+  stroke-dasharray: 40 205
+
+.ham3.active .top
+  stroke-dasharray: 75 130
+  stroke-dashoffset: -63px
+
+.ham3.active .middle
+  stroke-dashoffset: -102px
+
+.ham3.active .bottom
+  stroke-dasharray: 110 205
+  stroke-dashoffset: -86px

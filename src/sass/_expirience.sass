@@ -1,0 +1,71 @@
+.experience
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  margin: 40px 0 0 0
+  h3
+    font-size: 1.2em
+    margin: 0 0 20px 0
+  svg
+    margin: 0 0 20px 0
+
+.checkbox-wrap
+  display: flex
+  flex-direction: column
+.checkbox
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  margin: 0 0 20px 0
+  &-content
+    display: flex
+    align-items: center
+    margin: 0 0 15px 0
+    cursor: pointer
+    input
+      cursor: pointer
+  input[type='checkbox'] + label::after
+    content: none
+    cursor: pointer
+  input[type="checkbox"]:checked + label::after
+    content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgMTMgOSI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTEyLjcwNyAxLjcwN2wtNyA3TDUuNSA4LjVsLS4yMDcuMjA3LTUtNSAxLjQxNC0xLjQxNEw1LjUgNi4wODYgMTEuMjkzLjI5M3oiLz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==")
+    cursor: pointer
+  input[type="checkbox"]:hover + label::before
+    background: $checkBoxHover
+    cursor: pointer
+  input[type="checkbox"]:checked+ label::before
+    background: $colorButton
+    cursor: pointer
+
+  label
+    color: $colorMenuActive
+    font-size: 0.7em
+    margin: 0 0 0 15px
+    position: relative
+
+    &:before
+      content: ''
+      position: absolute
+      top: -2px
+      left: -36px
+      width: 20px
+      height: 20px
+      border: 1px solid $colorButton
+      border-radius: 3px
+      transition: all .3s
+      cursor: pointer
+
+    &:after
+      content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgMTMgOSI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTEyLjcwNyAxLjcwN2wtNyA3TDUuNSA4LjVsLS4yMDcuMjA3LTUtNSAxLjQxNC0xLjQxNEw1LjUgNi4wODYgMTEuMjkzLjI5M3oiLz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==")
+      position: absolute
+      top: 3px
+      left: -31px
+      width: 20px
+      height: 20px
+      z-index: 2
+      transition: all .3s
+  input
+    opacity: 0
+    width: 20px
+    height: 20px
