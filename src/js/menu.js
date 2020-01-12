@@ -6,6 +6,15 @@ burgerMenuBtn.addEventListener('click', () => {
 
 });
 
+const menuLinkAll = document.querySelectorAll('.menu>ul>li>a');
+
+menuLinkAll.forEach(item => {
+   item.addEventListener('click', ()=>{
+      burgerMenu.classList.remove('menuHidden')
+      document.querySelector('.ham3').classList.remove('active');
+   })
+});
+
 // собираем все якоря; устанавливаем время анимации и количество кадров
 const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
     animationTime = 300,
